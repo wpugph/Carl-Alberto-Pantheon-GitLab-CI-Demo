@@ -14,11 +14,6 @@
 
 namespace twenty_seventeen_child_theme;
 
-/**
- * Enqueue theme script and styles
- *
- * @return void
- */
 function Enqueue_Scripts_styles()
 {
 
