@@ -1,5 +1,5 @@
 <?php
-// phpcs:ignoreFile
+
 /**
  * TwentySeventeen Child Theme Functions
  * Version: 0.0.1
@@ -49,7 +49,3 @@ function Enqueue_Scripts_styles()
 }
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\Enqueue_Scripts_styles');
-
-function() {
-
-}
