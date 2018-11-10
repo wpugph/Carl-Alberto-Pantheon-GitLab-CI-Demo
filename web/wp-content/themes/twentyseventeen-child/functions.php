@@ -49,3 +49,7 @@ function Enqueue_Scripts_styles()
 }
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\Enqueue_Scripts_styles');
+
+function() {
+
+}
