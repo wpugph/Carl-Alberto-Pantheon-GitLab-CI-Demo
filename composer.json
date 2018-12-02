@@ -50,8 +50,8 @@
   "extra": {
     "wordpress-install-dir": "web/core",
     "installer-paths": {
-      "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+      "web/sites/default/modules/{$name}/": ["type:wordpress-plugin"],
+      "web/sites/default/themes/{$name}/": ["type:wordpress-theme"],
       "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
     }
   },
