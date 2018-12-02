@@ -25,8 +25,8 @@ class ScriptHandler
     $root = static::getWordPressRoot(getcwd());
 
     $dirs = [
-      'sites/default/modules',
-      'sites/default/themes',
+      'wp-content/plugins',
+      'wp-content/themes',
       'core',
       'private/scripts/quicksilver',
     ];
@@ -40,9 +40,9 @@ class ScriptHandler
     }
 
     // Create the files directory with chmod 0777
-    if (!$fs->exists($root . '/sites/default/files')) {
+    if (!$fs->exists($root . '/wp-content/uploads')) {
       $oldmask = umask(0);
-      $fs->mkdir($root . '/sites/default/files', 0777);
+      $fs->mkdir($root . '/wp-content/uploads', 0777);
       umask($oldmask);
       $event->getIO()->write("Create a wp-content/uploads directory with chmod 0777");
     }

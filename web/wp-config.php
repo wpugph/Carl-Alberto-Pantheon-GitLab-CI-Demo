@@ -175,23 +175,23 @@ endif;
 /*
 * Define wp-content directory outside of WordPress core directory
 */
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/sites/default' );
-define( 'WP_CONTENT_URL', WP_HOME . '/sites/default' );
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
+define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 
 #Set WP_CONTENT_URL to the full URI of this directory (no trailing slash), e.g.
 #define( 'WP_CONTENT_URL', 'http://example/blog/wp-content');
 #Set WP_PLUGIN_DIR to the full local path of this directory (no trailing slash), e.g.
-define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/sites/default/modules' );
+#define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/sites/default/modules' );
 #Set WP_PLUGIN_URL to the full URI of this directory (no trailing slash), e.g.
 #define( 'WP_PLUGIN_URL', 'http://example/blog/wp-content/plugins');
 #If you have compability issues with plugins Set PLUGINDIR to the full local path of this directory (no trailing slash), e.g.
 #define( 'PLUGINDIR', $_SERVER['DOCUMENT_ROOT'] . '/blog/wp-content/plugins' );
 
-echo 'test123:' . WP_PLUGIN_DIR;
+#echo 'test123:' . WP_PLUGIN_DIR;
 
-echo WP_CONTENT_URL;
+#echo WP_CONTENT_URL;
 
-define( 'UPLOADS', '/sites/default/files' );
+#define( 'UPLOADS', '/sites/default/files' );
 
 /**
  * WordPress Database Table prefix.
