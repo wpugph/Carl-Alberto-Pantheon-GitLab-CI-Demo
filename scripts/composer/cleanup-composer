@@ -3,14 +3,26 @@
 # Exit immediately on errors, and echo commands as they are executed.
 set -ex
 
-if [ -d "web/wp/wp-content/mu-plugins/" ]; then
-  rsync -a web/wp/wp-content/mu-plugins/* web/wp-content/mu-plugins/
+# if [ -d "web/wp/wp-content/mu-plugins/" ]; then
+#   rsync -a web/wp/wp-content/mu-plugins/* web/wp-content/mu-plugins/
+# fi
+
+# if [ -f "web/wp/wp-config.php" ]; then
+#   rm web/wp/wp-config.php
+# fi
+
+# if [ -d "web/wp/wp-content" ]; then
+#   rm -rf web/wp/wp-content
+# fi
+
+if [ -d "web/core/wp-content/mu-plugins/" ]; then
+  rsync -a web/core/wp-content/mu-plugins/* web/sites/default/mu-plugins/
 fi
 
-if [ -f "web/wp/wp-config.php" ]; then
-  rm web/wp/wp-config.php
+if [ -f "web/core/wp-config.php" ]; then
+  rm web/core/wp-config.php
 fi
 
-if [ -d "web/wp/wp-content" ]; then
-  rm -rf web/wp/wp-content
+if [ -d "web/core/wp-content" ]; then
+  rm -rf web/core/wp-content
 fi
