@@ -1,7 +1,7 @@
 api_version: 1
 php_version: 7.2
 web_docroot: true
-filemount: /wp-content/uploads
+filemount: /sites/default/files
 workflows:
   deploy_product:
     after:

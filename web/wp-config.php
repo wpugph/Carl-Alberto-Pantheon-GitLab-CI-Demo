@@ -176,7 +176,6 @@ endif;
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/sites/default' );
 define( 'WP_CONTENT_URL', WP_HOME . '/sites/default' );
 
-
 #Set WP_CONTENT_URL to the full URI of this directory (no trailing slash), e.g.
 #define( 'WP_CONTENT_URL', 'http://example/blog/wp-content');
 #Set WP_PLUGIN_DIR to the full local path of this directory (no trailing slash), e.g.
@@ -186,6 +185,7 @@ define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/sites/default/modules' );
 #If you have compability issues with plugins Set PLUGINDIR to the full local path of this directory (no trailing slash), e.g.
 #define( 'PLUGINDIR', $_SERVER['DOCUMENT_ROOT'] . '/blog/wp-content/plugins' );
 
+define( 'UPLOADS', '/sites/default/files' );
 
 /**
  * WordPress Database Table prefix.
