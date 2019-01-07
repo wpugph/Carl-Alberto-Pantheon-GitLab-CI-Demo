@@ -16,13 +16,13 @@ set -ex
 # fi
 
 if [ -d "web/core/wp-content/mu-plugins/" ]; then
-  rsync -a web/core/wp-content/mu-plugins/* web/sites/default/mu-plugins/
+  rsync -a wp/wp-content/mu-plugins/* web/sites/default/mu-plugins/
 fi
 
 if [ -f "web/core/wp-config.php" ]; then
-  rm web/core/wp-config.php
+  rm wp/wp-config.php
 fi
 
 if [ -d "web/core/wp-content" ]; then
-  rm -rf web/core/wp-content
+  rm -rf wp/wp-content
 fi

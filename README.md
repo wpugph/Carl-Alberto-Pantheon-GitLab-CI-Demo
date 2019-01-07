@@ -6,10 +6,10 @@ Fork of [Advanced WordPress on Pantheon by Andrew Taylor](https://github.com/ata
 
 ## Purpose
 
-* Local development environment with [Lando](https://docs.devwithlando.io/)
-* Asset compilation with [gulp](https://gulpjs.com/) 4
 * PHP dependency management with [Composer](https://getcomposer.org/)
 * Source control, build and testing processes run all in [GitLab](https://gitlab.com/)
+* Local development environment with [Lando](https://docs.devwithlando.io/)
+* Asset compilation with [gulp](https://gulpjs.com/) 4
 * Enforced [WordPress coding standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) with [PHP code sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 
 ## GitLab Setup
